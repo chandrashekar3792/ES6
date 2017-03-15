@@ -1,3 +1,4 @@
+// In weakMaps there are somany functions doesn't as maps
 var myMap = new Map();
 
 var myWeakMap = new WeakMap();
