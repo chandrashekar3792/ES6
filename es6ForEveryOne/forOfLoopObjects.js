@@ -10,3 +10,6 @@ for(const prop of Object.keys(apple)()){
   const value=apple[prop];
   console.log(value);//values
 }
+
+// if want actual elements text
+for

@@ -1,0 +1,28 @@
+<body>
+  <div class="people">
+    <p>chandra</p>
+    <p>shekar</p>
+    <p>naik</p>
+  </div>
+</body>
+<script>
+// Array.from takes array like elements and converts into actual array
+  const people =document.querySelector('.people');
+  const peopleArray = Array.from(people);
+
+
+  const peopleArray = Array.from(people,person =>{
+    console.log(person);//<p>chandra</p>,<p>shekar</p>,<p>naik</p>
+    return person.textContent;
+  });
+  console.log(peopleArray)//chandra,shekar,naik
+
+  function smAll(){
+    return arguments.reduce((prev,next)=> prev+next,0);
+  }
+  smAll(2,34,234,234234,234234,2342);//471337
+
+//Creates an array from every single arguments passed
+  const ages=Array.of(12,4,3,4,5);
+  console.log(ages);
+</script>
