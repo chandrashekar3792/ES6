@@ -10,5 +10,6 @@ function convertCurrency(amount){
 }
 
 const {USD,GPB,AUD,MEX,IND}=convertCurrency(100);
-
 console.log(USD,GPB,AUD,MEX,IND);
+
+const {USD,AUD}=convertCurrency(100);
