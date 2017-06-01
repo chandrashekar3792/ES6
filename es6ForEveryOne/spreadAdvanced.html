@@ -14,6 +14,20 @@
 
   //or
   const people=[...document.querySelectorAll('.people p')];
+  console.log(people);
 
+  const shoppingList=['milk','flour',...people];
+
+var comments=[
+  { id:1,text:'I Love Cat'},
+  {id:2,text:'I Love Dog'},
+  {id:1232,text:'Cute Dog'}
+];
+
+//remove object of particular Id
+const id=1232;
+const commentIndex=comments.findIndex(comment=>comment.id===id);
+
+const newComments=[...comments.slice(0,commentIndex),...comments.slice(commentIndex+1)];
 </body>
 </html>
