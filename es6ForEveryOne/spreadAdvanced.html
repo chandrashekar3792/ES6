@@ -1,0 +1,19 @@
+<html>
+<head>
+  <title>Spread Operator</title>
+</head>
+<body>
+  <div class="people">
+    <p>chandra</p>
+    <p>shekar</p>
+    <p>naik</p>
+  </div>
+  <script>
+  const people=Array.from(document.querySelectorAll('.people p'));
+  console.log(people);
+
+  //or
+  const people=[...document.querySelectorAll('.people p')];
+
+</body>
+</html>
