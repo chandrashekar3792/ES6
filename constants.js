@@ -4,5 +4,5 @@
 const PI=3.141593
 
 console.log(PI>3.0);
- PI=4;
+ //PI=4;
  console.log('PI',PI);//TypeError: Assignment to constant variable.

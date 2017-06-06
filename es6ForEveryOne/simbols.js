@@ -21,4 +21,4 @@ const classRoom={
 
 const syms=Object.getOwnPropertySymbols(classRoom);
 const data=syms.map(sym =>
-  console.log(classRoom[sym]));
+  classRoom[sym]);
