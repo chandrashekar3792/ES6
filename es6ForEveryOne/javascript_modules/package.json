@@ -1,0 +1,22 @@
+{
+  "name": "javascript_modules",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "build":"webpack --progress --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "flickity": "^2.0.8",
+    "lodash": "^4.17.4",
+    "slug": "^0.9.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015-native-modules": "^6.9.4",
+    "webpack": "^2.6.1"
+  }
+}
