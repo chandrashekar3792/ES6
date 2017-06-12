@@ -31,9 +31,9 @@ rhino.eat('burger');//['burger'];
 rhino.eat('leaves');//['burger','leaves'];
 rhino.eat('zeebra');//['burger','leaves','zeebra'];
 
-rhino.drink()//90
-rhino.drink()//80
-rhino.drink()//70
+rhino.drink();//90
+rhino.drink();//80
+rhino.drink();//70
 
 console.log(rhino);
 
