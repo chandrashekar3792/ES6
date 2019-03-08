@@ -15,6 +15,7 @@ MYSQL Lamda function
    Example:{query:["SELECT net_asset_value FROM nav_hist_2018_Q1 WHERE amfi_code = '112322'"]}  
    
 ### Reponse:
+ ```
  [
   [
       {
@@ -41,6 +42,4 @@ MYSQL Lamda function
       
     ]
 ]
-   
-        
-
+```
