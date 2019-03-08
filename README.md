@@ -48,11 +48,37 @@ MYSQL Lamda function
 ]
 ```
 ----------------------
-Document Lamda function
+DocumentDB Lamda function
 ----------------------
-### Insert
+## Insert
 
-| Proposal                                                                       | Author                                                                  | Champion                                                                | Tests                                          | <sub>Last Presented</sub>                               |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------- | ----------------------------------------------------------------------- | ---------------------------------------------- | --------------------------------------------------------|
-| [`globalThis`][globalThis]                                                     | Jordan Harband                                                          | Jordan Harband                                                          | [:white_check_mark:][tests-global]             | <sub>[November&nbsp;2018](globalThis-notes)</sub>       |
+### Function Name:
 
+*  Dev: cq-backend-dev-services-insert
+*  Prod:cq-backend-prod-services-insert
+
+### Parameters:
+
+*  collection: Name of the collection.  
+*  document: Document to be inserted
+
+        
+   Example:-
+   ```
+   {
+        collection:"user",
+        document:{
+            name:"chandru"
+            email:"chandru@gmail.com"
+        }
+   }
+### Reponse:
+    ```
+    {
+        result:{
+            _id:"5c825e0f213827c4f32dfe42"
+            name:"chandru"
+            email:"chandru@gmail.com"
+        }
+    }
+    ```
