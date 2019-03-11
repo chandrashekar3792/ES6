@@ -75,7 +75,7 @@ DocumentDB Lamda function
    
    ```
 ### Reponse:
-    
+  ```js
     {
         result:{
             _id:"5c825e0f213827c4f32dfe42"
@@ -83,6 +83,7 @@ DocumentDB Lamda function
             email:"chandru@gmail.com"
         }
     }
+  ```
     
 ## Find
 
@@ -118,7 +119,7 @@ DocumentDB Lamda function
     
     ```
     ##### Reponse:
-  
+    ```js
     {
         result:{
             _id:"5c825e0f213827c4f32dfe42"
@@ -126,6 +127,7 @@ DocumentDB Lamda function
             email:"chandru@gmail.com"
         }
     }
+     ```
     
     #### findType -> findOne
     
