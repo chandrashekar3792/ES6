@@ -299,6 +299,7 @@
 *  collection: Name of the collection(<b style='color:red'>Required</b>.).  
 *  Query: Query to find proper document(<b>Required</b>)
 *  removeType: Specify the remove type(<b>Required</b>) [removeOne,removeById,removeAll]
+*  id : Document ID when remove type is removeById
 
    #### Example:-
    ##### removeType: removeAll
@@ -313,13 +314,14 @@
     ```
     ##### Reponse:
     ```js
-    {
-        result:{
-            _id:"5c825e0f213827c4f32dfe42"
-            name:"chandru"
-            email:"chandru@gmail.com"
-        }
-    }
+     {
+     "result": {
+    "Updated": 0,
+    "Removed": 1,
+    "Matched": 1,
+    "UpsertedId": null
+  }
+}
      ```
     
     #### removeType: removeOne
@@ -353,13 +355,9 @@
     ```
     ##### Reponse:
     ```
-    {
-        result:{
-            _id:"5c825e0f213827c4f32dfe42"
-            name:"chandru"
-            email:"chandru@gmail.com"
-        }
-    }
+  	{
+          "result": "Deleted successfully"
+       }
     ```
 ## Aggregate
 
