@@ -244,7 +244,7 @@
 *  collection: Name of the collection(<b style='color:red'>Required</b>.).  
 *  where: Query to find proper document(<b>Required</b>)
 *  set: Field which need to be update(<b>Required</b>)
-*  updateType: Specify the find type(<b>Required</b>) [updateOne,updateMany]
+*  updateType: Specify the update type(<b>Required</b>) [updateOne,updateMany]
 
    #### Example:-
    ##### updateType: updateMany
@@ -292,4 +292,83 @@
         }
     }
     ```  
+## Remove
+
+### Function Name:
+
+*  Dev: cq-backend-dev-services-remove
+*  Prod:cq-backend-prod-services-remove
+
+### Parameters:
+
+*  collection: Name of the collection(<b style='color:red'>Required</b>.).  
+*  Query: Query to find proper document(<b>Required</b>)
+*  removeType: Specify the remove type(<b>Required</b>) [removeOne,removeById,removeAll]
+
+   #### Example:-
+   ##### removeType: removeAll
+   
+    ```js
+    {
+        collection:"user",
+        where:{username:"chandru",
+        removeType:"removeAll"
+    }
+    
+    ```
+    ##### Reponse:
+    ```js
+    {
+        result:{
+            _id:"5c825e0f213827c4f32dfe42"
+            name:"chandru"
+            email:"chandru@gmail.com"
+        }
+    }
+     ```
+    
+    #### updateType: removeOne
+    
+    ```js
+    {
+        {
+        collection:"user",
+        where:{username:"chandru",
+        removeType:"removeOne"
+    }
+    }
+    
+    ```
+    ##### Reponse:
+    ```
+    {
+        result:{
+            _id:"5c825e0f213827c4f32dfe42"
+            name:"chandru"
+            email:"chandru@gmail.com"
+        }
+    }
+    ```  
+     #### updateType: removeById
+    
+    ```js
+    {
+        {
+        collection:"user",
+        id:"5c825e0f213827c4f32dfe42",
+        removeType:"removeById"
+    }
+    }
+    
+    ```
+    ##### Reponse:
+    ```
+    {
+        result:{
+            _id:"5c825e0f213827c4f32dfe42"
+            name:"chandru"
+            email:"chandru@gmail.com"
+        }
+    }
+    ```
     
