@@ -8,6 +8,14 @@
 
 - [Mysql](#MYSQL)
 - [DocumentDB](#DocumentDB)
+	- [Insert](#insert)
+		- [findType ->findALl](#findType->findAll)
+	- [Find](#find)
+	- [Update](#update)
+	- [Remove](#Remove)
+	- [Aggregate](#Aggregate)
+- [ElasticCache](#ElasticCache)
+- [ActiveMQ](#ActiveMQ)
 	
 	
 
