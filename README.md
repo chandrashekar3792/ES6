@@ -1,8 +1,8 @@
-<div align="center">
-	<div>
+
+
 		<h2> Service Layer Documentation</h2>
-	</div>
-<div>
+	
+
 
 ## Functions
 
