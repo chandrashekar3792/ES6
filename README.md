@@ -253,7 +253,7 @@
     {
         collection:"user",
         where:{username:"chandru"},
-	  set:{email:"chandru@gmail.com",
+	    set:{email:"chandru@gmail.com",
         updateType:"updateMany"
     }
     
@@ -276,7 +276,7 @@
         
         collection:"user",
         where:{username:"chandru"},
-	 set:{email:"chandru@gmail.com",
+	   set:{email:"chandru@gmail.com",
         updateType:"updateOne"
     }
     
@@ -386,7 +386,7 @@
    ```js
    {
    	collection:"user",
-	     operations:[
+	       operations:[
 		{"$match":{status:"A"},
 		{"$group":{_id:"$cust_id",total:{"$sum":"$amount"}}}
 	]
