@@ -209,13 +209,9 @@
     ```
     ##### Reponse:
     ```js
-    {
-        result:{
-            _id:"5c825e0f213827c4f32dfe42"
-            name:"chandru"
-            email:"chandru@gmail.com"
-        }
-    }
+   {
+   	"result": 2
+   }
    ```
     #### findType: distinct
      ```js
