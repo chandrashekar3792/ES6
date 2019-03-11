@@ -64,7 +64,7 @@ DocumentDB Lamda function
 
         
    Example:-
-   ```json
+   ```js
    {
         collection:"user",
         document:{
@@ -74,7 +74,7 @@ DocumentDB Lamda function
    }
    ```
 ### Reponse:
-    ```json
+    ```js
     {
         result:{
             _id:"5c825e0f213827c4f32dfe42"
