@@ -156,8 +156,7 @@
       "_id": "5c7fab6211d62b16f467dc01",
       "name": "chandru"
     }
-  ]
-}
+   ]}
      ```
     
     #### findType: findOne
