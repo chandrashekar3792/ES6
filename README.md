@@ -59,8 +59,8 @@ DocumentDB Lamda function
 
 ### Parameters:
 
-*  collection: Name of the collection.  
-*  document: Document to be inserted
+*  collection: Name of the collection(<b>Required</b>).  
+*  document: Document to be inserted(<b>Required</b>).
 
         
    Example:-
@@ -83,3 +83,42 @@ DocumentDB Lamda function
         }
     }
     ```
+## Find
+
+### Function Name:
+
+*  Dev: cq-backend-dev-services-find
+*  Prod:cq-backend-prod-services-find
+
+### Parameters:
+
+*  collection: Name of the collection(<b style='color:red'>Required</b>.).  
+*  query: Query to find proper document(<b>Required</b>)
+*  select: Specify the fields which are required
+*  findType: Specify the find type(<b>Required</b>) [findAll,findOne,findById,count,distinct]
+*  sort:Specify the sort order by field
+*  limit:Speicify how many documents to get
+*  skip: Specify how many documents to skip
+
+        
+   Example:-
+   ```
+   {
+        collection:"user",
+        document:{
+            name:"chandru"
+            email:"chandru@gmail.com"
+        }
+   }
+   ```
+### Reponse:
+    ```
+    {
+        result:{
+            _id:"5c825e0f213827c4f32dfe42"
+            name:"chandru"
+            email:"chandru@gmail.com"
+        }
+    }
+    ```    
+    
