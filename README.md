@@ -72,6 +72,7 @@ DocumentDB Lamda function
             email:"chandru@gmail.com"
         }
    }
+   ```
 ### Reponse:
     ```
     {
