@@ -128,6 +128,7 @@
 *  sort:Specify the sort order by field
 *  limit:Speicify how many documents to get
 *  skip: Specify how many documents to skip
+*  uniqueField: Specify the field name when find type is distinct
 
         
    #### Example:-
@@ -219,18 +220,17 @@
         collection:"user",
         query:{username:"chandru",
         findType:"distinct",
+	uniqueField:"name"
     }
     
     ```
     ##### Reponse:
   ```js
-    {
-        result:{
-            _id:"5c825e0f213827c4f32dfe42"
-            name:"chandru"
-            email:"chandru@gmail.com"
-        }
-    }
+   {
+  "result": [
+    "chandru"
+  ]
+}
   ```
 ## Update
 
