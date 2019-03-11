@@ -272,13 +272,9 @@
     #### updateType: updateOne
     
     ```js
-    {
-        
-        collection:"user",
-        where:{username:"chandru"},
-	   set:{email:"chandru@gmail.com",
-        updateType:"updateOne"
-    }
+   {
+     "result": "Updated successfully"
+   }
     
     ```
     ##### Reponse:
@@ -330,23 +326,18 @@
     
     ```js
     {
-        {
         collection:"user",
         where:{username:"chandru"},
         removeType:"removeOne"
-    }
+    
     }
     
     ```
     ##### Reponse:
     ```
-    {
-        result:{
-            _id:"5c825e0f213827c4f32dfe42"
-            name:"chandru"
-            email:"chandru@gmail.com"
-        }
-    }
+   {
+     "result": "Deleted successfully"
+   }
     ```  
      #### removeType: removeById
     
