@@ -64,7 +64,7 @@ DocumentDB Lamda function
 
         
    Example:-
-   ```
+   ```json
    {
         collection:"user",
         document:{
@@ -74,7 +74,7 @@ DocumentDB Lamda function
    }
    ```
 ### Reponse:
-    ```
+    ```json
     {
         result:{
             _id:"5c825e0f213827c4f32dfe42"
@@ -92,7 +92,7 @@ DocumentDB Lamda function
 
 ### Parameters:
 
-*  collection: Name of the collection(<b style='color:red'>Required</b>.).  
+*  collection: Name of the collection(![#f03c15](https://placehold.it/15/f03c15/000000?text=+) <b style='color:red'>Required</b>.).  
 *  query: Query to find proper document(<b>Required</b>)
 *  select: Specify the fields which are required
 *  findType: Specify the find type(<b>Required</b>) [findAll,findOne,findById,count,distinct]
