@@ -92,7 +92,7 @@ DocumentDB Lamda function
 
 ### Parameters:
 
-*  collection: Name of the collection(![#f03c15](https://placehold.it/15/f03c15/000000?text=+) <b style='color:red'>Required</b>.).  
+*  collection: Name of the collection(<b style='color:red'>Required</b>.).  
 *  query: Query to find proper document(<b>Required</b>)
 *  select: Specify the fields which are required
 *  findType: Specify the find type(<b>Required</b>) [findAll,findOne,findById,count,distinct]
@@ -102,15 +102,15 @@ DocumentDB Lamda function
 
         
    Example:-
-   ```
-   {
+    ```js
+    {
         collection:"user",
         document:{
             name:"chandru"
             email:"chandru@gmail.com"
         }
-   }
-   ```
+    }
+    ```
 ### Reponse:
     ```
     {
