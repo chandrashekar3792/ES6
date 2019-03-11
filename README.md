@@ -95,6 +95,7 @@ DocumentDB Lamda function
 
 *  collection: Name of the collection(<b style='color:red'>Required</b>.).  
 *  query: Query to find proper document(<b>Required</b>)
+*  id: Document Id if you need particular document when findType is findById
 *  select: Specify the fields which are required
 *  findType: Specify the find type(<b>Required</b>) [findAll,findOne,findById,count,distinct]
 *  sort:Specify the sort order by field
@@ -102,18 +103,79 @@ DocumentDB Lamda function
 *  skip: Specify how many documents to skip
 
         
-   Example:-
+   #### Example:-
+   ##### FindType  -> findAll
+   
     ```js
     {
         collection:"user",
-        document:{
+        query:{username:"chandru",
+        findType:"findAll",
+        sort:{_id:-1},
+        skip:10
+        limit:1
+    }
+    
+    ```
+    ##### Reponse:
+  
+    {
+        result:{
+            _id:"5c825e0f213827c4f32dfe42"
             name:"chandru"
             email:"chandru@gmail.com"
         }
     }
     
+    #### findType -> findOne
+    
+    ```js
+    {
+        collection:"user",
+        query:{username:"chandru",
+        findType:"findOne",
+    }
+    
     ```
-### Reponse:
+    ##### Reponse:
+  
+    {
+        result:{
+            _id:"5c825e0f213827c4f32dfe42"
+            name:"chandru"
+            email:"chandru@gmail.com"
+        }
+    }
+    
+    #### findType -> findById
+     ```js
+    {
+        collection:"user",
+        _id:"5c825e0f213827c4f32dfe42",
+        findType:"findById",
+    }
+    
+    ```
+    ##### Reponse:
+  
+    {
+        result:{
+            _id:"5c825e0f213827c4f32dfe42"
+            name:"chandru"
+            email:"chandru@gmail.com"
+        }
+    }
+    
+    #### findType -> count
+     ```js
+    {
+        collection:"user",
+        query:{username:"chandru",
+        findType:"count",
+    }
+    
+    ```
+    ##### Reponse:
   
     {
         result:{
@@ -123,4 +185,22 @@ DocumentDB Lamda function
         }
     }
    
+    #### findType -> distinct
+     ```js
+    {
+        collection:"user",
+        query:{username:"chandru",
+        findType:"distinct",
+    }
+    
+    ```
+    ##### Reponse:
+  
+    {
+        result:{
+            _id:"5c825e0f213827c4f32dfe42"
+            name:"chandru"
+            email:"chandru@gmail.com"
+        }
+    }
     
