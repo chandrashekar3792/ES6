@@ -13,13 +13,13 @@ MYSQL Lamda function
 *  query: Array of strings.  
         
    Example:-
-   ```
+   ```js
    {query:["SELECT net_asset_value FROM nav_hist_2018_Q1 WHERE amfi_code = '112322'"]}
    
    ```
    
 ### Reponse:
- ```
+ ```js
  [
   [
       {
@@ -72,6 +72,7 @@ DocumentDB Lamda function
             email:"chandru@gmail.com"
         }
    }
+   
    ```
 ### Reponse:
     ```js
@@ -110,9 +111,10 @@ DocumentDB Lamda function
             email:"chandru@gmail.com"
         }
     }
+    
     ```
 ### Reponse:
-    ```
+    ```js
     {
         result:{
             _id:"5c825e0f213827c4f32dfe42"
@@ -120,5 +122,6 @@ DocumentDB Lamda function
             email:"chandru@gmail.com"
         }
     }
+    
     ```    
     
