@@ -375,8 +375,8 @@
    ```js
    {
    	collection:"user",
-	       operations:[
-		{"$match":{status:"A"},
+	operations:[
+		{"$match":{status:"A"}},
 		{"$group":{_id:"$cust_id",total:{"$sum":"$amount"}}}
 	]
    }
@@ -384,6 +384,9 @@
    #### Response:-
    ```js
    {
-   	result:{}
+   	result:[
+		{ "_id" : "A123", "total" : 750 },
+		{ "_id" : "B212", "total" : 200 }
+	]
    }
    ```
