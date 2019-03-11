@@ -154,18 +154,18 @@ DocumentDB Lamda function
         _id:"5c825e0f213827c4f32dfe42",
         findType:"findById",
     }
-    
     ```
     ##### Reponse:
-  ```
-    {
-        result:{
-            _id:"5c825e0f213827c4f32dfe42"
-            name:"chandru"
-            email:"chandru@gmail.com"
-        }
-    }
-    ```
+     ```js
+     {
+                result:{
+                    _id:"5c825e0f213827c4f32dfe42"
+                    name:"chandru"
+                    email:"chandru@gmail.com"
+                }
+            }
+     ```
+   
     #### findType -> count
      ```js
     {
@@ -176,7 +176,7 @@ DocumentDB Lamda function
     
     ```
     ##### Reponse:
-  ```
+    ```js
     {
         result:{
             _id:"5c825e0f213827c4f32dfe42"
