@@ -232,4 +232,64 @@
         }
     }
   ```
+## Update
+
+### Function Name:
+
+*  Dev: cq-backend-dev-services-update
+*  Prod:cq-backend-prod-services-update
+
+### Parameters:
+
+*  collection: Name of the collection(<b style='color:red'>Required</b>.).  
+*  where: Query to find proper document(<b>Required</b>)
+*  set: Field which need to be update(<b>Required</b>)
+*  updateType: Specify the find type(<b>Required</b>) [updateOne,updateMany]
+
+   #### Example:-
+   ##### updateType: updateMany
+   
+    ```js
+    {
+        collection:"user",
+        where:{username:"chandru",
+	set:{email:"chandru@gmail.com",
+        updateType:"updateMany"
+    }
+    
+    ```
+    ##### Reponse:
+    ```js
+    {
+        result:{
+            _id:"5c825e0f213827c4f32dfe42"
+            name:"chandru"
+            email:"chandru@gmail.com"
+        }
+    }
+     ```
+    
+    #### updateType: updateOne
+    
+    ```js
+    {
+        {
+        collection:"user",
+        where:{username:"chandru",
+	set:{email:"chandru@gmail.com",
+        updateType:"updateOne"
+    }
+    }
+    
+    ```
+    ##### Reponse:
+    ```
+    {
+        result:{
+            _id:"5c825e0f213827c4f32dfe42"
+            name:"chandru"
+            email:"chandru@gmail.com"
+        }
+    }
+    ```  
     
