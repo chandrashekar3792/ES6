@@ -10,7 +10,7 @@
 - [DocumentDB](#DocumentDB)
 	- [Insert](#insert)
 	- [Find](#find)
-		- [findType:findAll](#findtype----findall)
+		- [findType:findAll](#findtypefindall)
 	- [Update](#update)
 	- [Remove](#Remove)
 	- [Aggregate](#Aggregate)
@@ -122,7 +122,7 @@
 
         
    #### Example:-
-   ##### FindType  -> findAll
+   ##### FindType: findAll
    
     ```js
     {
@@ -146,7 +146,7 @@
     }
      ```
     
-    #### findType -> findOne
+    #### findType: findOne
     
     ```js
     {
@@ -166,7 +166,7 @@
         }
     }
     ```
-    #### findType:findById
+    #### findType: findById
      ```js
     {
         collection:"user",
@@ -185,7 +185,7 @@
             }
      ```
    
-    #### findType -> count
+    #### findType: count
      ```js
     {
         collection:"user",
@@ -204,7 +204,7 @@
         }
     }
    ```
-    #### findType -> distinct
+    #### findType: distinct
      ```js
     {
         collection:"user",
