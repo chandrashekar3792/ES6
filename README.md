@@ -146,13 +146,18 @@
     ```
     ##### Reponse:
     ```js
+   {
+   "result": [
     {
-        result:{
-            _id:"5c825e0f213827c4f32dfe42"
-            name:"chandru"
-            email:"chandru@gmail.com"
-        }
+      "_id": "5c7fa9e111d62b31b17cb4a5",
+      "name": "chandru"
+    },
+    {
+      "_id": "5c7fab6211d62b16f467dc01",
+      "name": "chandru"
     }
+  ]
+}
      ```
     
     #### findType: findOne
