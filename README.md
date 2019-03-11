@@ -1,11 +1,18 @@
 <div align="center">
 	<div>
-		<img width="500" src="media/logo.svg" alt="Awesome Node.js">
+		<h2> Service Layer Documentation</h2>
 	</div>
 <div>
-----------------------
-MYSQL Lamda function
-----------------------
+
+## Functions
+
+- [Mysql](#MYSQL)
+- [DocumentDB](#DocumentDB)
+	
+	
+
+#MYSQL
+
 
 ### Function Name:
 
@@ -51,9 +58,9 @@ MYSQL Lamda function
     ]
 ]
 ```
-----------------------
-DocumentDB Lamda function
-----------------------
+
+#DocumentDB
+
 ## Insert
 
 ### Function Name:
