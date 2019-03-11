@@ -1,4 +1,8 @@
-
+<div align="center">
+	<div>
+		<img width="500" src="media/logo.svg" alt="Awesome Node.js">
+	</div>
+<div>
 ----------------------
 MYSQL Lamda function
 ----------------------
