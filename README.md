@@ -9,7 +9,7 @@
 - [Mysql](#MYSQL)
 - [DocumentDB](#DocumentDB)
 	- [Insert](#insert)
-		- [findType:findAll](#findType:findAll)
+		- [findType:findAll](#findtype----findall)
 	- [Find](#find)
 	- [Update](#update)
 	- [Remove](#Remove)
