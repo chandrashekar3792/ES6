@@ -252,7 +252,7 @@
     ```js
     {
         collection:"user",
-        where:{username:"chandru",
+        where:{username:"chandru"},
 	set:{email:"chandru@gmail.com",
         updateType:"updateMany"
     }
@@ -275,7 +275,7 @@
     {
         {
         collection:"user",
-        where:{username:"chandru",
+        where:{username:"chandru"},
 	set:{email:"chandru@gmail.com",
         updateType:"updateOne"
     }
@@ -311,7 +311,7 @@
     ```js
     {
         collection:"user",
-        where:{username:"chandru",
+        where:{username:"chandru"},
         removeType:"removeAll"
     }
     
@@ -333,7 +333,7 @@
     {
         {
         collection:"user",
-        where:{username:"chandru",
+        where:{username:"chandru"},
         removeType:"removeOne"
     }
     }
@@ -387,7 +387,7 @@
    ```js
    {
    	collection:"user",
-operations:[
+	  operations:[
 		{"$match":{status:"A"},
 		{"$group":{_id:"$cust_id",total:{"$sum":"$amount"}}}
 	]
