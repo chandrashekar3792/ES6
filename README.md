@@ -9,7 +9,7 @@
 - [Mysql](#MYSQL)
 - [DocumentDB](#DocumentDB)
 	- [Insert](#insert)
-		- [findType ->findALl](#findType->findAll)
+		- [findType:findALl](#findType:findById)
 	- [Find](#find)
 	- [Update](#update)
 	- [Remove](#Remove)
@@ -166,7 +166,7 @@
         }
     }
     ```
-    #### findType -> findById
+    #### findType:findById
      ```js
     {
         collection:"user",
