@@ -327,7 +327,7 @@
     }
      ```
     
-    #### updateType: removeOne
+    #### removeType: removeOne
     
     ```js
     {
@@ -349,7 +349,7 @@
         }
     }
     ```  
-     #### updateType: removeById
+     #### removeType: removeById
     
     ```js
     {
@@ -371,4 +371,31 @@
         }
     }
     ```
-    
+## Aggregate
+
+### Function Name:
+
+*  Dev: cq-backend-dev-services-aggregate
+*  Prod:cq-backend-prod-services-aggregate
+
+### Parameters:
+
+*  collection: Name of the collection(<b style='color:red'>Required</b>.).  
+*  operations: Array of operations required for aggregation(<b>Required</b>)
+
+   #### Example:-
+   ```js
+   {
+   	collection:"user",
+	operations:[
+		{"$match":{status:"A"},
+		{"$group":{_id:"$cust_id",total:{"$sum":"$amount"}}}
+	]
+   }
+   ```
+   #### Response:-
+   ```js
+   {
+   	result:{}
+   }
+   ```
