@@ -320,8 +320,8 @@
     "Removed": 1,
     "Matched": 1,
     "UpsertedId": null
-  }
-}
+    }
+   }
      ```
     
     #### removeType: removeOne
